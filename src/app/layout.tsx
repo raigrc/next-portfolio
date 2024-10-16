@@ -21,12 +21,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  contact_information,
-  main,
+  contact_info,
 }: Readonly<{
   children: React.ReactNode;
-  contact_information: React.ReactNode;
-  main: React.ReactNode;
+  contact_info: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -35,8 +33,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <div className="max-w-screen-lg mx-auto flex justify-center items-center h-screen">
-            {contact_information}
-            {main}
+            {contact_info}
           </div>
         </ThemeProvider>
       </body>
