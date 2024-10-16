@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="max-w-screen-lg mx-auto pt-40">
             <div className="flex justify-center space-x-4 w-full">
               {contact_info}
