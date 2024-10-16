@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import { Button } from "../ui/button";
 import Link from "next/link";
 import { IconContext } from "react-icons";
 
