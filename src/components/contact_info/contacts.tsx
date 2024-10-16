@@ -13,6 +13,9 @@ import { ContactProps } from "@/types";
 import { Typewriter } from "react-simple-typewriter";
 import { MailIcon, MapPin, Phone } from "lucide-react";
 import Socials from "./socials";
+import { Button } from "../ui/button";
+import { IoMdDownload } from "react-icons/io";
+import Link from "next/link";
 
 const ContactInfo: React.FC<ContactProps> = ({
   avatar,
@@ -23,7 +26,7 @@ const ContactInfo: React.FC<ContactProps> = ({
   location,
 }) => {
   return (
-    <Card className="w-[300px] relative">
+    <Card className="w-[300px] relative h-full">
       <ContactAvatar avatar={avatar} />
       <CardHeader className="text-center pt-24 pb-16">
         <CardTitle className="tracking-wide">{name}</CardTitle>
@@ -45,6 +48,20 @@ const ContactInfo: React.FC<ContactProps> = ({
           <p>{location}</p>
         </div>
       </CardContent>
+      <CardFooter>
+        <Button className="w-full space-x-1">
+          <IoMdDownload />
+          <Link
+            href="/RAVEN_JUSTIN_P_GARCIA_RESUME.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            locale={false}
+          >
+            Download CV
+          </Link>
+        </Button>
+      </CardFooter>
       <CardFooter>
         <Socials />
       </CardFooter>
