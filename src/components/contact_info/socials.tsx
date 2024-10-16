@@ -1,13 +1,29 @@
 import React from "react";
-import { Github } from "lucide-react";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { Button } from "../ui/button";
+import Link from "next/link";
+import { IconContext } from "react-icons";
 
 const Socials = () => {
   return (
-    <div className="flex items-center justify-center space-x-2">
-      <Button variant="ghost">
-        <Github />
-      </Button>
+    <div className="flex mx-auto space-x-2">
+      <IconContext.Provider
+        value={{
+          size: "1.2rem",
+          className:
+            "fill-accent-foreground/70 transition duration-300 hover:fill-primary",
+        }}
+      >
+        <Link href="" target="blank">
+          <FaGithub />
+        </Link>
+        <Link href="" target="blank">
+          <FaLinkedin />
+        </Link>
+        <Link href="" target="blank">
+          <FaFacebook />
+        </Link>
+      </IconContext.Provider>
     </div>
   );
 };

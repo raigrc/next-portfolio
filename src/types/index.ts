@@ -1,5 +1,7 @@
+import { StaticImageData } from "next/image";
+
 export interface ContactAvatarProps {
-  avatar: string;
+  avatar: string | StaticImageData;
 }
 
 export interface ContactProps extends ContactAvatarProps {
