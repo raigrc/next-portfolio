@@ -1,6 +1,6 @@
 import ContactInfo from "@/components/contact_info/contacts";
 import React from "react";
-import Avatar from "@/public/Avatar.png";
+import Avatar from "@/assets/Avatar.png";
 
 const DefaultContacts = () => {
   return (
