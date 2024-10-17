@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar } from "@/components/ui/avatar";
 import { ContactAvatarProps } from "@/types";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const ContactAvatar: React.FC<ContactAvatarProps> = ({ avatar }) => {
   const avatarSrc = typeof avatar === "string" ? avatar : avatar.src;
