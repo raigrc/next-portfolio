@@ -8,46 +8,36 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <Card className="h-auto">
-      <CardContent className="flex items-center space-x-4 justify-center px-6 py-2">
+      <CardContent className="flex items-center justify-center space-x-4 px-6 py-2">
         <Link
-          href="/"
+          href="/#about"
           className={`${
-            pathname == "/"
-              ? "text-primary font-bold "
+            pathname == "/#about"
+              ? "font-bold text-primary"
               : "text-muted-foreground"
-          } hover:text-primary/70 transition-all duration-300`}
-        >
-          Home
-        </Link>
-        <Link
-          href="/about"
-          className={`${
-            pathname == "/about"
-              ? "text-primary font-bold"
-              : "text-muted-foreground"
-          } hover:text-primary/70 transition-all duration-300`}
+          } transition-all duration-300 hover:text-primary/70`}
         >
           About
         </Link>
         <Link
-          href="/projects"
+          href="/#skills"
           className={`${
-            pathname == "/projects"
-              ? "text-primary font-bold"
+            pathname == "/#skills"
+              ? "font-bold text-primary"
               : "text-muted-foreground"
-          } hover:text-primary/70 transition-all duration-300`}
-        >
-          Projects
-        </Link>
-        <Link
-          href="/skills"
-          className={`${
-            pathname == "/skills"
-              ? "text-primary font-bold"
-              : "text-muted-foreground"
-          } hover:text-primary/70 transition-all duration-300`}
+          } transition-all duration-300 hover:text-primary/70`}
         >
           Skills
+        </Link>
+        <Link
+          href="/#projects"
+          className={`${
+            pathname == "/projects"
+              ? "font-bold text-primary"
+              : "text-muted-foreground"
+          } transition-all duration-300 hover:text-primary/70`}
+        >
+          Projects
         </Link>
       </CardContent>
     </Card>
