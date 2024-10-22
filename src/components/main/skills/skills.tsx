@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import HTML from "@/assets/file-type-html.svg";
 import skills from "@/lib/skills";
 
 const Skills = () => {
@@ -13,7 +12,9 @@ const Skills = () => {
             alt={skill.name}
             className="size-16 transition-all duration-300 hover:scale-75"
           />
-          <p className="text-center group-hover:font-semibold group-hover:text-primary transition-all duration-300 tracking-wider">{skill.name}</p>
+          <p className="text-center tracking-wider transition-all duration-300 group-hover:font-semibold group-hover:text-primary">
+            {skill.name}
+          </p>
         </div>
       ))}
     </div>
