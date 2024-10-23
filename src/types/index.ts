@@ -23,3 +23,19 @@ export interface SkillsProps {
   name: string;
   src: string | StaticImageData;
 }
+
+export interface SkillsDataProps {
+  skills: SkillsProps[];
+}
+
+export interface ProjectProps {
+  title: string;
+  description: string;
+  techStack: string[];
+  image: StaticImageData;
+  date: Date;
+}
+
+export interface ProjectDataProps {
+  projects: ProjectProps[];
+}
