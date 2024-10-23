@@ -12,7 +12,7 @@ import Badges from "./badges";
 import { ProjectDataProps } from "@/types";
 
 const Projects: React.FC<ProjectDataProps> = ({ projects }) => {
-  projects.sort((a: any, b: any) => b.date - a.date);
+  projects.sort((a, b) => b.date.getTime() - a.date.getTime());
 
   return (
     <div className="grid grid-cols-2 place-items-start gap-4">

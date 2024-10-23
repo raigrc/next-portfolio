@@ -35,8 +35,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased `}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="mx-auto max-w-screen-lg pt-40">
-            <div className="flex w-full justify-center gap-6">
+          <div className="mx-auto max-w-screen-lg pt-[150px]">
+            <div className="flex w-full justify-center gap-6 my-4">
               {contact_info}
               {main}
             </div>
