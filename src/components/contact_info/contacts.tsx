@@ -26,9 +26,9 @@ const ContactInfo: React.FC<ContactProps> = ({
   location,
 }) => {
   return (
-    <Card className="w-[300px] h-full sticky top-20">
+    <Card className="relative h-full w-full md:w-[300px] lg:sticky lg:top-20">
       <ContactAvatar avatar={avatar} />
-      <CardHeader className="text-center pt-24 pb-16">
+      <CardHeader className="pb-16 pt-24 text-center">
         <CardTitle className="tracking-wide">{name}</CardTitle>
         <CardDescription className="h-px text-primary">
           <Typewriter words={role} loop={0} />

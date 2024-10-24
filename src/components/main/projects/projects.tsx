@@ -18,7 +18,7 @@ const Projects: React.FC<ProjectDataProps> = ({ projects }) => {
   projects.sort((a, b) => b.date.getTime() - a.date.getTime());
 
   return (
-    <div className="grid grid-cols-2 place-items-start gap-4">
+    <div className="grid md:grid-cols-2 place-items-start gap-4">
       {projects.map((projects, index) => (
         <Card
           className="group ring-2 hover:shadow-lg hover:shadow-primary"

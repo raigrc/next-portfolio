@@ -2,9 +2,12 @@ import Image from "next/image";
 import React from "react";
 import { SkillsDataProps } from "@/types";
 
-const Skills: React.FC<SkillsDataProps> = ({skills}) => {
+const Skills: React.FC<SkillsDataProps> = ({ skills }) => {
   return (
-    <div className="grid grid-cols-5 place-items-center gap-4" id="skills">
+    <div
+      className="grid grid-cols-3 place-items-center gap-4 md:grid-cols-4 lg:grid-cols-5"
+      id="skills"
+    >
       {skills.map((skill, index) => (
         <div key={index} className="group grid place-items-center">
           <Image

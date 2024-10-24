@@ -45,7 +45,7 @@ export default function RootLayout({
           <div className="absolute top-0 z-[-2] h-full w-screen bg-background bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
           {/* BACKGROUND SNIPPET */}
           <div className="mx-auto max-w-screen-lg pt-[150px]">
-            <div className="flex w-full justify-center gap-6 py-4">
+            <div className="flex w-full flex-col items-center justify-center gap-6 py-4 lg:flex-row lg:items-start px-4">
               {contact_info}
               {main}
             </div>
