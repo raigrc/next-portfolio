@@ -16,7 +16,7 @@ const Contacts = () => {
       ]}
       mail="ravenjstn.grc@gmail.com"
       phone="+63 994 6916 633"
-      location="San Pedro, Laguna"
+      location="Laguna, Philippines"
     />
   );
 };
