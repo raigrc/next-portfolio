@@ -34,6 +34,7 @@ export interface ProjectProps {
   techStack: string[];
   image: StaticImageData;
   date: Date;
+  url: string;
 }
 
 export interface ProjectDataProps {

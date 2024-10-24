@@ -13,6 +13,7 @@ const projects: ProjectProps[] = [
     techStack: ["HTML", "CSS", "Javascript", "PHP"],
     image: ECommerce,
     date: new Date("2023-02"),
+    url: "https://github.com/raigrc/E-Commerce",
   },
   {
     title: "Online Booking Resort",
@@ -21,6 +22,7 @@ const projects: ProjectProps[] = [
     techStack: ["HTML", "CSS", "JavaScript", "SCSS", "PHP"],
     image: OLBooking,
     date: new Date("2023-02"),
+    url: "https://github.com/raigrc/Online-Booking-Resorts",
   },
   {
     title: "Workout Tracker",
@@ -30,6 +32,7 @@ const projects: ProjectProps[] = [
     image: Workout,
 
     date: new Date("2024-03"),
+    url: "https://github.com/raigrc/MERN-Workout-Tracker",
   },
   // {
   //   title: "2048",
@@ -37,8 +40,8 @@ const projects: ProjectProps[] = [
   //     "This project is a browser-based implementation of the popular 2048 puzzle game, created as part of an online workshop of Zuitt - Coding Bootcamp. Using HTML, CSS, and JavaScript, this game provides an engaging and interactive experience for players. The goal of the game is to combine tiles with the same numbers to reach the elusive 2048 tile.",
   //   techStack: ["HTML", "CSS", "JavaScript"],
   //   image: JSFCB,
-
   //   date: new Date("2024-03"),
+  //url: ""
   // },
   {
     title: "Eskwela4EveryJuan",
@@ -48,6 +51,7 @@ const projects: ProjectProps[] = [
     image: E4EJ,
 
     date: new Date("2024-04"),
+    url: "https://github.com/raigrc/Eskwela4EveryJuan",
   },
 ];
 

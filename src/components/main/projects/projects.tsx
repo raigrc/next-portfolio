@@ -10,6 +10,9 @@ import ProjectTitle from "./project-title";
 import Description from "./description";
 import Badges from "./badges";
 import { ProjectDataProps } from "@/types";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { FiGithub } from "react-icons/fi";
 
 const Projects: React.FC<ProjectDataProps> = ({ projects }) => {
   projects.sort((a, b) => b.date.getTime() - a.date.getTime());
@@ -17,7 +20,10 @@ const Projects: React.FC<ProjectDataProps> = ({ projects }) => {
   return (
     <div className="grid grid-cols-2 place-items-start gap-4">
       {projects.map((projects, index) => (
-        <Card className="group ring-2" key={index}>
+        <Card
+          className="group ring-2 hover:shadow-lg hover:shadow-primary"
+          key={index}
+        >
           <CardHeader className="m-0 p-0">
             <ImageHolder img={projects.image} />
           </CardHeader>
@@ -28,7 +34,14 @@ const Projects: React.FC<ProjectDataProps> = ({ projects }) => {
               <Badges title={stack} key={index} />
             ))}
           </CardContent>
-          <CardFooter></CardFooter>
+          <CardFooter className="float-right">
+            <Button className="space-x-2" size="sm">
+              <FiGithub size={12} />
+              <Link href={projects.url} target="_blank">
+                Source Code
+              </Link>
+            </Button>
+          </CardFooter>
         </Card>
       ))}
     </div>

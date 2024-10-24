@@ -1,6 +1,6 @@
 import About from "@/components/main/about/about";
 import CardWrapper from "@/components/main/card-wrapper";
-import Navbar from "@/components/navbar/navbar";
+// import Navbar from "@/components/navbar/navbar";
 import Skills from "@/components/main/skills/skills";
 import React from "react";
 import Projects from "@/components/main/projects/projects";
@@ -10,7 +10,7 @@ import projects from "@/lib/projects";
 const MainLayout = () => {
   return (
     <div className="flex w-full flex-col gap-6">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <CardWrapper title="About me" id="about">
         <About />

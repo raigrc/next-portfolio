@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 
 const Socials = () => {
   return (
-    <div className="flex mx-auto space-x-2">
+    <div className="mx-auto flex space-x-2">
       <IconContext.Provider
         value={{
           size: "1.2rem",
@@ -13,13 +13,13 @@ const Socials = () => {
             "fill-accent-foreground/70 transition duration-300 hover:fill-primary",
         }}
       >
-        <Link href="" target="blank">
+        <Link href="https://github.com/raigrc" target="_blank">
           <FaGithub />
         </Link>
-        <Link href="" target="blank">
+        <Link href="https://www.linkedin.com/in/raigrc/" target="_blank">
           <FaLinkedin />
         </Link>
-        <Link href="" target="blank">
+        <Link href="https://www.facebook.com/xraigrc/" target="_blank">
           <FaFacebook />
         </Link>
       </IconContext.Provider>
