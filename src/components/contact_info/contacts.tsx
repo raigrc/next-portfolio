@@ -37,7 +37,9 @@ const ContactInfo: React.FC<ContactProps> = ({
       <CardContent className="space-y-4 text-sm text-muted-foreground">
         <div className="flex items-center space-x-2">
           <MailIcon size={16} />
-          <p>{mail}</p>
+          <Link href={`mailto:${mail}`}>
+            {mail}
+          </Link>
         </div>
         <div className="flex items-center space-x-2">
           <Phone size={16} />

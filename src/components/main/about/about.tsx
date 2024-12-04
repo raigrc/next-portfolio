@@ -14,9 +14,6 @@ const About = () => {
         graduated with Latin honors —{" "}
         <span className="font-semibold text-primary">Cum Laude</span>
       </p>
-      {/* <h1 className="text-transparent bg-gradient-to-b from-primary from-40% to-muted font-bold tracking-wide text-6xl text-center bg-clip-text">
-        Get it done, then make it beautiful.
-      </h1> */}
     </div>
   );
 };
