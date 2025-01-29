@@ -1,11 +1,30 @@
 import ECommerce from "@/assets/projects/e-commerce.jpg";
 import OLBooking from "@/assets//projects/online-booking.jpg";
 import Workout from "@/assets/projects/workout-tracker.jpg";
+import FTracker from "@/assets/projects/Finance_Tracker.png";
+
 // import JSFCB from "/projects/2048-game.jpg";
 import E4EJ from "@/assets/projects/e4ej.jpg";
 import { ProjectProps } from "@/types";
 
 const projects: ProjectProps[] = [
+  {
+    title: "Finance Tracker",
+    description:
+      "A personal budgeting and expense management web application built using the MERN stack. It allows users to track income, allocate budgets across categories, manage transactions.",
+    techStack: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "Zod",
+      "ShadCN",
+      "Zustand",
+    ],
+    image: FTracker,
+    date: new Date("2025-01"),
+    url: "https://github.com/raigrc/FT-MERN",
+  },
   {
     title: "E-Commerce Website",
     description:

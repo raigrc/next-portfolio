@@ -58,7 +58,7 @@ const ContactInfo: React.FC<ContactProps> = ({
             download
             target="_blank"
             rel="noopener noreferrer"
-            locale={false}
+            // locale={false}
           >
             Download CV
           </Link>

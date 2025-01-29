@@ -32,7 +32,7 @@ export default function RootLayout({
   main: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${poppins.className} relative overflow-x-hidden antialiased`}
       >
