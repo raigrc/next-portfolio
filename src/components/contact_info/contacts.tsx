@@ -37,9 +37,7 @@ const ContactInfo: React.FC<ContactProps> = ({
       <CardContent className="space-y-4 text-sm text-muted-foreground">
         <div className="flex items-center space-x-2">
           <MailIcon size={16} />
-          <Link href={`mailto:${mail}`}>
-            {mail}
-          </Link>
+          <Link href={`mailto:${mail}`}>{mail}</Link>
         </div>
         <div className="flex items-center space-x-2">
           <Phone size={16} />
@@ -54,7 +52,7 @@ const ContactInfo: React.FC<ContactProps> = ({
         <Button className="w-full space-x-1">
           <IoMdDownload />
           <Link
-            href="/RAVEN_JUSTIN_P_GARCIA_RESUME.pdf"
+            href="/Garcia_Raven_Justin_P_Resume.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
